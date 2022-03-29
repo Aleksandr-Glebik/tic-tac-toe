@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./x.ico" type="image/x-icon">
+    <script
+      src="https://kit.fontawesome.com/2a1e31490f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper header-container">
+        <h1 class="header__title">Tic Tac Toe</h1>
+      </div>
+    </header>
+    <main class="main">
+      <div class="wrapper main-container">
+        <div class="start slowlyShow">
+          <h2 class="start-title">Let's play!</h2>
+          <div class="start-content">
+            <button class="start-btn x">X</button>
+            <button class="start-btn o">O</button>
+          </div>
+        </div>
+        <div class="game hide">
+          <h2 class="game-title"></h2>
+          <div class="game-container">
+            <div data-index="0" class="item"></div>
+            <div data-index="1" class="item"></div>
+            <div data-index="2" class="item"></div>
+            <div data-index="3" class="item"></div>
+            <div data-index="4" class="item"></div>
+            <div data-index="5" class="item"></div>
+            <div data-index="6" class="item"></div>
+            <div data-index="7" class="item"></div>
+            <div data-index="8" class="item"></div>
+          </div>
+        </div>
+        <div class="result hide">
+          <h2 class="result-title">Winner</h2>
+          <div class="result-content">
+            <button class="result-btn try-again">try again</button>
+            <button class="result-btn cancel">cancel</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrapper footer-container">
+        <div class="footer-container-content">
+          <span class="footer__text">&copy;</span>
+          <span class="footer__text">Aleksandr-Glebik</span>
+          <a href="https://github.com/Aleksandr-Glebik" target="_blank"
+            ><i class="fab fa-github footer__icon" aria-hidden="true"></i
+          ></a>
+          <span class="footer__text">2022</span>
+        </div>
+        <a href="https://rs.school/js/" target="_blank"
+          ><img
+            src="https://rs.school/images/rs_school_js.svg"
+            class="footer__logo"
+            alt="rsschool-logo"
+        /></a>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

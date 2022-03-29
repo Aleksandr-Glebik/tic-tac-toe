@@ -1,0 +1,475 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #13547a, #80d0c7);
+}
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  height: 10rem;
+  background: linear-gradient(90deg, #13547a, #80d0c7);
+}
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__title {
+  font-size: 4rem;
+  line-height: 4rem;
+  color: black;
+  transition: all 0.7s;
+  font-family: "Nanum Gothic", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+}
+.header__title:hover {
+  color: white;
+  transform: scale(1.03);
+}
+.main {
+  width: 100%;
+  height: 75.7rem;
+  background: inherit;
+}
+.main-container {
+  position: relative;
+}
+.start {
+  width: 50rem;
+  height: 50rem;
+  border: 3px solid gold;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 25rem);
+  left: calc(50% - 25rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.6s linear;
+  display: flex;
+}
+.start-title {
+  font-size: 4rem;
+  color: gold;
+  border-bottom: 2px solid gold;
+  margin-bottom: 4rem;
+  transition: all 0.6s;
+}
+.start-title:hover {
+  transform: scale(1.05);
+}
+.start-btn {
+  font-size: 5rem;
+  width: 6rem;
+  height: 7rem;
+  margin: 1rem;
+  color: gold;
+  background-color: #65c5ba;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: all 0.6s;
+}
+.start-btn:hover {
+  transform: scale(1.15);
+}
+.game {
+  width: 50rem;
+  height: 50rem;
+  position: absolute;
+  top: calc(50% - 35rem);
+  left: calc(50% - 25rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.6s linear;
+  display: flex;
+}
+.game-title {
+  font-size: 4rem;
+  color: gold;
+  margin: 2rem;
+  transition: all 0.6s;
+}
+.game-title:hover {
+  transform: scale(1.05);
+}
+.game-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: flex-start;
+}
+.item {
+  font-size: 10rem;
+  color: gold;
+  padding: 2rem 5rem;
+  width: 16rem;
+  height: 16rem;
+  border: 4px solid gold;
+  transition: all 0.6s;
+}
+.item:hover {
+  transform: scale(1.05);
+}
+.footer {
+  width: 100%;
+  height: 9rem;
+  background: linear-gradient(90deg, #13547a, #80d0c7);
+}
+.footer-container {
+  padding: 0 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-container-content {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__logo {
+  width: 14rem;
+  transition: all 0.6s;
+}
+.footer__logo:hover {
+  transform: scale(1.1);
+}
+.footer__icon {
+  font-size: 4rem;
+  color: black;
+  transition: all 0.6s;
+}
+.footer__icon:hover {
+  color: white;
+  transform: scale(1.2);
+}
+.footer__text {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: black;
+  transition: all 0.6s;
+}
+.footer__text:hover {
+  color: white;
+  transform: scale(1.1);
+}
+.result {
+  width: 50rem;
+  height: 50rem;
+  border: 3px solid gold;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 25rem);
+  left: calc(50% - 25rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.6s linear;
+  display: flex;
+}
+.result-title {
+  font-size: 4rem;
+  color: gold;
+  border-bottom: 2px solid gold;
+  margin-bottom: 4rem;
+  transition: all 0.6s;
+}
+.result-title:hover {
+  transform: scale(1.05);
+}
+.result-btn {
+  font-size: 2.8rem;
+  width: 15rem;
+  height: 5rem;
+  margin: 1rem;
+  color: gold;
+  background-color: #65c5ba;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: all 0.6s;
+}
+.result-btn:hover {
+  transform: scale(1.15);
+}
+.hide {
+  display: none;
+}
+.slowlyHide {
+  opacity: 0;
+}
+.slowlyShow {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 8rem;
+  }
+  .main {
+    height: 50rem;
+  }
+  .footer {
+    height: 7rem;
+  }
+  .header__title {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .footer__text {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .footer-container-content {
+    width: 400px;
+  }
+  .footer__icon {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .footer__logo {
+    width: 10rem;
+  }
+  .start {
+    width: 40rem;
+    height: 40rem;
+    top: calc(50% - 20rem);
+    left: calc(50% - 20rem);
+  }
+  .game {
+    width: 40rem;
+    height: 40rem;
+    top: calc(50% - 25rem);
+    left: calc(50% - 19rem);
+  }
+  .game-title {
+    font-size: 3rem;
+    line-height: 5rem;
+    margin: 2rem;
+  }
+  .item {
+    font-size: 5rem;
+    padding: 3rem 4rem;
+    width: 12rem;
+    height: 12rem;
+    border: 2px solid gold;
+  }
+  .result {
+    width: 40rem;
+    height: 40rem;
+    top: calc(50% - 20rem);
+    left: calc(50% - 20rem);
+  }
+  .result-title {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    margin-bottom: 2rem;
+  }
+  .result-btn {
+    font-size: 2.4rem;
+    width: 12rem;
+    height: 4rem;
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    height: 6rem;
+  }
+  .main {
+    height: 40rem;
+  }
+  .footer {
+    height: 6rem;
+  }
+  .header__title {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+  .footer__text {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+  .footer-container-content {
+    width: 300px;
+  }
+  .footer__icon {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+  .footer__logo {
+    width: 8rem;
+  }
+  .start {
+    width: 36rem;
+    height: 36rem;
+    top: calc(50% - 18rem);
+    left: calc(50% - 18rem);
+  }
+  .game {
+    width: 36rem;
+    height: 36rem;
+    top: calc(50% - 21rem);
+    left: calc(50% - 16rem);
+  }
+  .game-title {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    margin: 2rem;
+    margin-left: -1rem;
+  }
+  .item {
+    font-size: 4rem;
+    padding: 2.5rem 3.5rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  .result {
+    width: 36rem;
+    height: 36rem;
+    top: calc(50% - 18rem);
+    left: calc(50% - 18rem);
+  }
+  .result-title {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    margin-bottom: 2rem;
+  }
+  .result-btn {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  .footer__text {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .footer-container-content {
+    width: 250px;
+  }
+  .footer__icon {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .footer__logo {
+    width: 7rem;
+  }
+}
+@media screen and (max-width: 405px) {
+  .footer__text {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+  .footer-container-content {
+    width: 230px;
+  }
+  .footer__icon {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+  .footer__logo {
+    width: 6rem;
+  }
+}
+@media screen and (max-width: 375px) {
+.header {
+    height: 4rem;
+  }
+  .main {
+    height: 40rem;
+  }
+  .footer {
+    height: 4rem;
+  }
+  .header__title {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+  .footer-container {
+    padding: 0 2rem;
+  }
+  .footer__text {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+  .footer-container-content {
+    width: 200px;
+  }
+  .footer__icon {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+  .footer__logo {
+    width: 5rem;
+  }
+  .start {
+    width: 30rem;
+    height: 30rem;
+    top: calc(50% - 15rem);
+    left: calc(50% - 15rem);
+  }
+  .start-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.start-btn {
+  font-size: 3rem;
+  width: 5rem;
+  height: 5rem;
+  margin: 0.5rem;
+}
+  .game {
+    width: 30rem;
+    height: 30rem;
+    top: calc(50% - 19rem);
+    left: calc(50% - 15rem);
+  }
+  .game-title {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    margin: 1rem;
+  }
+  .result {
+    width: 30rem;
+    height: 30rem;
+    top: calc(50% - 15rem);
+    left: calc(50% - 15rem);
+  }
+  .result-title {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    margin-bottom: 2rem;
+  }
+  .result-btn {
+    width: 10rem;
+    margin: 0.5rem;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+}
