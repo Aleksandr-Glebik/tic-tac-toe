@@ -45,7 +45,8 @@ body {
 }
 .main {
   width: 100%;
-  height: 75.7rem;
+  /* height: 75.7rem; */
+  height: calc(100vh - 19rem);
   background: inherit;
 }
 .main-container {
@@ -95,7 +96,8 @@ body {
   width: 50rem;
   height: 50rem;
   position: absolute;
-  top: calc(50% - 35rem);
+  /* top: calc(50% - 35rem); */
+  top: calc(50% - 30rem);
   left: calc(50% - 25rem);
   display: flex;
   flex-direction: column;
@@ -231,7 +233,8 @@ body {
     height: 8rem;
   }
   .main {
-    height: 50rem;
+    /* height: 50rem; */
+    height: calc(100vh - 15rem);
   }
   .footer {
     height: 7rem;
@@ -302,7 +305,8 @@ body {
     height: 6rem;
   }
   .main {
-    height: 40rem;
+    /* height: 40rem; */
+    height: calc(100vh - 12rem);
   }
   .footer {
     height: 6rem;
@@ -402,7 +406,8 @@ body {
     height: 4rem;
   }
   .main {
-    height: 40rem;
+    /* height: 40rem; */
+    height: calc(100vh - 8rem);
   }
   .footer {
     height: 4rem;
